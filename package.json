@@ -1,6 +1,6 @@
 {
   "name": "sodium-prebuilt",
-  "version": "1.1.15",
+  "version": "1.1.16",
   "author": "Pedro Paixao <paixaop@gmail.com>",
   "license": "MIT",
   "main": "index.js",
@@ -19,6 +19,7 @@
   "scripts": {
     "test": "make test",
     "install": "prebuild --install --preinstall \"node install.js --preinstall && node install.js --install\"",
+    "postinstall": "./copy_dll",
     "prebuild": "prebuild --all --preinstall \"node install.js --preinstall && node install.js --install\""
   },
   "repository": {

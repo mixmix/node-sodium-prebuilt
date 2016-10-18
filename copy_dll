@@ -1,0 +1,8 @@
+#! /usr/bin/sh
+
+if [ -f deps/build/lib/libsodium.dll ];
+then
+  echo 'copying libsodium.dll into Releases'
+  cp deps/build/lib/libsodium.dll build/Releases/
+fi
+
